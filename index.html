@@ -72,21 +72,25 @@
 </section>
 <section class="section" id="rezervacia">
 <h2>Rezervácia kurzu</h2>
-<form data-netlify="true" method="POST" name="kontakt">
-<input type="hidden" name="form-name" value="kontakt">
-<input name="meno" placeholder="Vaše meno" required="" type="text"/>
-<input name="email" placeholder="Váš e-mail" required="" type="email"/>
-<select name="kurz" required="">
-<option value="">Vyberte kurz</option>
-<option value="anglictina">Angličtina</option>
-<option value="matematika">Matematika</option>
-<option value="slovencina">Slovenčina</option>
-<option value="Štúdijné predpoklady">Štúdijné predpoklady</option>
-<option value="fyzika">Fyzika</option>
-<option value="francuzstina">Francúzština</option>
-</select>
-<textarea name="sprava" placeholder="Vaša správa alebo preferovaný čas" rows="4"></textarea>
-<button type="submit">Odoslať rezerváciu</button>
+<form name="kontakt" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="kontakt" />
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <select name="course" required>
+    <option value="">Select a course</option>
+    <option value="english">English</option>
+    <option value="math">Math</option>
+    <option value="slovak">Slovak</option>
+    <option value="gsp">GSP prep</option>
+    <option value="physics">Physics</option>
+    <option value="french">French</option>
+  </select>
+
+  <textarea name="message" placeholder="Your message or preferred time" rows="4"></textarea>
+
+  <button type="submit">Submit Booking</button>
 </form>
 </section>
 <section class="section" id="kontakt">

@@ -72,21 +72,25 @@
 </section>
 <section class="section" id="booking">
 <h2>Book a Lesson</h2>
-<form data-netlify="true" method="POST" name="kontakt">
-<input type="hidden" name="form-name" value="kontakt">
-<input name="name" placeholder="Your Name" required="" type="text"/>
-<input name="email" placeholder="Your Email" required="" type="email"/>
-<select name="course" required="">
-<option value="">Select a course</option>
-<option value="english">English</option>
-<option value="math">Math</option>
-<option value="slovak">Slovak</option>
-<option value="gsp">GSP prep</option>
-<option value="physics">Physics</option>
-<option value="french">French</option>
-</select>
-<textarea name="message" placeholder="Your message or preferred time" rows="4"></textarea>
-<button type="submit">Submit Booking</button>
+<form name="kontakt" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="kontakt" />
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <select name="course" required>
+    <option value="">Select a course</option>
+    <option value="english">English</option>
+    <option value="math">Math</option>
+    <option value="slovak">Slovak</option>
+    <option value="gsp">GSP prep</option>
+    <option value="physics">Physics</option>
+    <option value="french">French</option>
+  </select>
+
+  <textarea name="message" placeholder="Your message or preferred time" rows="4"></textarea>
+
+  <button type="submit">Submit Booking</button>
 </form>
 </section>
 <section class="section" id="contact">
