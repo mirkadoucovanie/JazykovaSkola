@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.mirkadoucovanie.online/sitemap.xml
+Sitemap: https://mirkadoucovanie.online/sitemap.xml
