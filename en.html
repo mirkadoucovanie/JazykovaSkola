@@ -175,6 +175,24 @@
     to { transform: translateY(-50%) translateX(var(--slideMaxMobile, 0)); }
   }
 }
+
+@media (max-width: 650px) {
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+  nav a {
+    padding: 4px 4px;
+    font-size: 0.97em;
+    margin: 0 2px;
+    min-width: unset;
+    white-space: nowrap;
+  }
+}
 </style>
 </meta>
 <script type="application/ld+json">
