@@ -119,21 +119,60 @@
 }
 .lang-switch-overlay span { color: #333; margin-right: 3px; }
 .lang-switch-overlay a { color: #005bb5; text-decoration: none; margin-left: 6px; font-weight: bold; }
+
+/* Mobile styles */
+.banner-move-bar-mobile { display: none; }
 @media (max-width: 700px) {
-  .banner-move-bar {
-    flex-direction: column;
-    min-height: 32px;
-  }
-  .sliding-area {
-    height: 32px;
-    min-width: 120px;
-  }
-  .lang-switch-overlay {
+  .banner-desktop { display: none !important; }
+  .banner-move-bar-mobile { 
+    display: block;
+    background: #fff;
+    border-bottom: 1.5px solid #e5eaf2;
     width: 100%;
-    justify-content: center;
-    font-size: 1em;
+    position: relative;
+    z-index: 3;
     padding: 0;
-    height: 32px;
+  }
+  .lang-switch-overlay-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #fff;
+    font-size: 1em;
+    padding: 0 16px 0 0;
+    height: 34px;
+    min-height: 32px;
+    font-weight: bold;
+  }
+  .lang-switch-overlay-mobile span { color: #333; margin-right: 3px; }
+  .lang-switch-overlay-mobile a { color: #005bb5; text-decoration: none; margin-left: 6px; font-weight: bold; }
+  .sliding-area-mobile {
+    width: 100%;
+    height: 34px;
+    min-width: 120px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+  .moving-text-mobile {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #0073e6;
+    font-size: 1em;
+    transform: translateY(-50%) translateX(0);
+    animation: move-text-mobile-x 6s ease-in-out infinite alternate;
+    will-change: transform;
+    pointer-events: none;
+  }
+  @keyframes move-text-mobile-x {
+    from { transform: translateY(-50%) translateX(0); }
+    to { transform: translateY(-50%) translateX(var(--slideMaxMobile, 0)); }
   }
 }
 </style>
@@ -164,7 +203,7 @@
 <h1>Jazyková škola Online</h1>
 <p>Doučovanie a jazykové kurzy z pohodlia domova</p>
 </header>
-<div class="banner-move-bar">
+<div class="banner-move-bar banner-desktop">
   <div class="sliding-area">
     <span class="moving-text">Ešte voľné termíny v septembri 2025</span>
   </div>
@@ -172,6 +211,16 @@
     <span>Jazyk:</span>
     <a href="index.html">SK</a> |
     <a href="en.html">EN</a>
+  </div>
+</div>
+<div class="banner-move-bar-mobile banner-mobile">
+  <div class="lang-switch-overlay-mobile">
+    <span>Jazyk:</span>
+    <a href="index.html">SK</a> |
+    <a href="en.html">EN</a>
+  </div>
+  <div class="sliding-area-mobile">
+    <span class="moving-text-mobile">Ešte voľné termíny v septembri 2025</span>
   </div>
 </div>
 
@@ -244,11 +293,20 @@
 
 <script>
 function setBannerSlideDistance() {
+  // Desktop verzia
   const area = document.querySelector('.sliding-area');
   const text = document.querySelector('.moving-text');
-  if (!area || !text) return;
-  const max = area.clientWidth - text.offsetWidth;
-  text.style.setProperty('--slideMax', (max > 0 ? max : 0) + 'px');
+  if (area && text) {
+    const max = area.clientWidth - text.offsetWidth;
+    text.style.setProperty('--slideMax', (max > 0 ? max : 0) + 'px');
+  }
+  // Mobilná verzia
+  const areaMobile = document.querySelector('.sliding-area-mobile');
+  const textMobile = document.querySelector('.moving-text-mobile');
+  if (areaMobile && textMobile) {
+    const maxMobile = areaMobile.clientWidth - textMobile.offsetWidth;
+    textMobile.style.setProperty('--slideMaxMobile', (maxMobile > 0 ? maxMobile : 0) + 'px');
+  }
 }
 window.addEventListener('resize', setBannerSlideDistance);
 window.addEventListener('DOMContentLoaded', setBannerSlideDistance);
