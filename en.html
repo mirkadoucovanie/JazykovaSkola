@@ -121,6 +121,10 @@
 .lang-switch-overlay a { color: #005bb5; text-decoration: none; margin-left: 6px; font-weight: bold; }
 
 /* Mobile styles */
+.banner-move-bar-mobile,
+.lang-switch-overlay-mobile {
+  display: none;
+}
 .banner-move-bar-mobile { display: none; }
 @media (max-width: 700px) {
   .banner-desktop { display: none !important; }
@@ -231,14 +235,10 @@
     <a href="en.html">EN</a>
   </div>
 </div>
-<div class="banner-move-bar-mobile banner-mobile">
-  <div class="lang-switch-overlay-mobile">
+<div class="lang-switch-overlay-mobile">
     <span>Language:</span>
     <a href="index.html">SK</a> |
     <a href="en.html">EN</a>
-  </div>
-  <div class="sliding-area-mobile">
-    <span class="moving-text-mobile">Spots still available in September 2025</span>
   </div>
 </div>
 
@@ -251,6 +251,12 @@
 <a href="#booking">Booking</a>
 <a href="#contact">Contact</a>
 </nav>
+
+<div class="banner-move-bar-mobile banner-mobile">
+  <div class="sliding-area-mobile">
+    <span class="moving-text-mobile">Spots still available in September 2025</span>
+  </div>
+</div>
 <div class="container">
 <section class="section" id="about">
 <h2>About Us</h2>
