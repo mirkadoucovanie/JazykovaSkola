@@ -197,6 +197,22 @@
     white-space: nowrap;
   }
 }
+
+.social-icon {
+  text-decoration: none;
+}
+.social-icon img {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+
+/* Social icons unified style */
+.social-icons { display: inline-flex; align-items: center; gap: 8px; }
+.social-icon { text-decoration: none; display: inline-block; line-height: 0; }
+.social-icon img { width: 24px; height: 24px; vertical-align: middle; }
+
 </style>
 </meta>
 <script type="application/ld+json">
@@ -308,7 +324,17 @@
 <p>Máte záujem o kurz alebo potrebujete viac informácií? Neváhajte nás kontaktovať:</p>
 <p><strong>Email:</strong> mirkadoucovanie@gmail.com</p>
 <p><strong>doucma.sk:</strong> <a href="https://www.doucma.sk/112578-doucovanie-doucovanie?af=profile-share" target="_blank">https://www.doucma.sk/112578-doucovanie-doucovanie?af=profile-share</a></p>
-<p><strong>Sociálne siete:</strong> <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+<p><strong>Sociálne siete:</strong> 
+  <span class="social-icons">
+    <a class="social-icon" href="https://www.facebook.com/profile.php?id=61578917687039" target="_blank" aria-label="Facebook">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+    </a>
+    |
+    <a class="social-icon" href="#" target="_blank" aria-label="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+  </span>
+</p>
 </section>
 </div>
 <footer>
