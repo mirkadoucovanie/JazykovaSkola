@@ -3,19 +3,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="Online math tutoring for primary and secondary school students. Individual approach. Flexible schedule. Available across Slovakia." name="description">
-<meta content="math tutoring Bratislava, math tutoring Trnava, math tutoring Nitra, math tutoring Trencin, math tutoring Zilina, math tutoring Banska Bystrica, math tutoring Presov, math tutoring Kosice, math tutoring Pezinok, math tutoring Senec, math tutoring Dunajska Streda, math tutoring Komarno, math tutoring Levice, math tutoring Zlate Moravce, math tutoring Partizanske, math tutoring Prievidza, math tutoring Puchov, math tutoring Martin, math tutoring Ruzomberok, math tutoring Liptovsky Mikulas, math tutoring Poprad, math tutoring Spisska Nova Ves, math tutoring Presov, math tutoring Humenne, math tutoring Michalovce, math tutoring Roznava, math tutoring Lucenec, math tutoring Zvolen, math tutoring Brezno, math tutoring Detva, math tutoring Kezmarok, math tutoring Sala, math tutoring Galanta, math tutoring Topolcany, math tutoring Senica, math tutoring Skalica, math tutoring Nove Zamky, math tutoring Vranov nad Toplou, math tutoring Sabinov, tutoring Bratislava, tutoring Trnava, tutoring Nitra, tutoring Trencin, tutoring Zilina, tutoring Banska Bystrica, tutoring Presov, tutoring Kosice, tutoring Pezinok, tutoring Senec, tutoring Dunajska Streda, tutoring Komarno, tutoring Levice, tutoring Zlate Moravce, tutoring Partizanske, tutoring Prievidza, tutoring Puchov, tutoring Martin, tutoring Ruzomberok, tutoring Liptovsky Mikulas, tutoring Poprad, tutoring Spisska Nova Ves, tutoring Presov, tutoring Humenne, tutoring Michalovce, tutoring Roznava, tutoring Lucenec, tutoring Zvolen, tutoring Brezno, tutoring Detva, tutoring Kezmarok, tutoring Sala, tutoring Galanta, tutoring Topolcany, tutoring Senica, tutoring Skalica, tutoring Nove Zamky, tutoring Vranov nad Toplou, tutoring Sabinov, online math tutoring, math preparation for graduation, individual tutoring Slovakia" name="keywords"/>
+<meta content="Professional online tutoring and language school online. English, Math, Slovak, Physics. Personalized approach, flexible schedule, across Slovakia." name="description">
+<meta content="online tutoring, language school online, online English tutoring, online Math tutoring, online Slovak tutoring, online Physics tutoring, tutoring Slovakia, tutoring online" name="keywords"/>
 <meta content="mirkadoucovanie.online" name="author"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Online Language School – Tutoring and Courses</title>
-<meta content="Online tutoring and language lessons for English, Math, Slovak and more. Flexible scheduling. Personalized approach." name="description"/>
-<meta content="language school, tutoring, English courses, math help, online lessons, slovak language, physics tutoring, GSP test prep" name="keywords"/>
+<title>Online tutoring – Language school & courses</title>
+<meta content="Professional online tutoring and language school online. English, Math, Slovak, Physics. Personalized approach, flexible schedule, across Slovakia." name="description"/>
+<meta content="online tutoring, language school online, online English tutoring, online Math tutoring, online Slovak tutoring, online Physics tutoring, tutoring Slovakia, tutoring online" name="keywords"/>
 <meta content="Jazyková škola Online" name="author"/>
 <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
     header { background: #0073e6; color: white; padding: 20px 0; text-align: center; }
     nav { background: #005bb5; padding: 10px 0; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav { row-gap: 4px; }
+  nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     .container { max-width: 1000px; margin: auto; padding: 20px; background: white; }
     .section { margin-bottom: 40px; }
     h1 { color: #ffffff; }
@@ -183,7 +184,7 @@
 @media (max-width: 650px) {
   nav {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 0;
@@ -213,6 +214,62 @@
 .social-icon { text-decoration: none; display: inline-block; line-height: 0; }
 .social-icon img { width: 24px; height: 24px; vertical-align: middle; }
 
+
+/* FAQ (collapsible) - updated colors */
+.faq { margin: 28px 0; }
+.faq h2 { margin-bottom: 12px; color:#0056b3; }
+.faq-item { border: 1px solid #cbd6e2; border-radius: 8px; margin-bottom: 10px; background:#ffffff; box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+.faq-q { display:flex; justify-content:space-between; align-items:center; width:100%; padding:14px 16px; font-weight:bold; cursor:pointer; background:#f0f6ff; border:none; color:#003366; font-size:1rem; }
+.faq-a { display:none; padding:14px 16px; border-top:1px solid #cbd6e2; background:#ffffff; color:#333; font-size:0.95rem; line-height:1.5; }
+.faq-q:after { content:"+"; font-weight:bold; color:#0056b3; font-size:1.2rem; }
+.faq-item.open .faq-q:after { content:"–"; color:#cc0000; }
+.faq-item.open .faq-q { background:#e6f0ff; }
+.faq { margin: 28px 0; }
+.faq h2 { margin-bottom: 12px; }
+.faq-item { border: 1px solid #e5eaf2; border-radius: 8px; margin-bottom: 10px; background:#fff; }
+.faq-q { display:flex; justify-content:space-between; align-items:center; width:100%; padding:12px 14px; font-weight:bold; cursor:pointer; background:#f7faff; border:none; }
+.faq-a { display:none; padding:12px 14px; border-top:1px solid #e5eaf2; }
+.faq-q:after { content:"+"; font-weight:normal; }
+.faq-item.open .faq-q:after { content:"–"; }
+
+
+/* FAQ (collapsible) - final styling with animation */
+.faq { margin: 28px 0; }
+.faq h2 { margin-bottom: 12px; color: #0073e6; }
+.faq-item { border: 1px solid #e5eaf2; border-radius: 12px; margin-bottom: 12px; background: #ffffff; overflow: hidden; }
+.faq-q { 
+  display: flex; justify-content: space-between; align-items: center; width: 100%;
+  padding: 14px 16px; font-weight: 500; font-size: 1rem; cursor: pointer; background: #ffffff; color: #0073e6; border: none;
+}
+.faq-q:hover { background: #e6f0ff; }
+.faq-a { 
+  max-height: 0; overflow: hidden; opacity: 0;
+  padding: 0 16px; background: #ffffff; color: #333; border-top: 1px solid #e5eaf2; 
+  transition: max-height 300ms ease, opacity 240ms ease, padding 240ms ease;
+  font-size: 0.95rem;
+}
+.faq-item.open .faq-a { 
+  max-height: 600px; /* enough for multi-line content */
+  opacity: 1;
+  padding: 14px 16px;
+}
+.faq-q:after { content: "+"; font-weight: 700; font-size: 20px; line-height: 1; color: #0073e6; transition: transform 240ms ease; }
+.faq-item.open .faq-q:after { content: "–"; transform: rotate(180deg); }
+
+
+/* Smooth animation for FAQ answers */
+.faq-a {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 16px;
+}
+.faq-item.open .faq-a {
+  max-height: 500px; /* large enough to fit content */
+  padding: 14px 16px;
+}
+
 </style>
 </meta>
 <script type="application/ld+json">
@@ -235,11 +292,51 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is online tutoring and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lessons run over video call (Microsoft Teams). Before the first session we agree on goals and level; then I share materials and assignments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which subjects do you offer online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "English, Math, Slovak, Physics, plus exam prep (monitor, entrance exams, graduation)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do you provide online tutoring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Across Slovakia — lessons are online and scheduled flexibly. You only need internet and a computer/phone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is the online language school suitable for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pupils, secondary students, graduates and adults. We adapt the lessons to your goals (exams, interviews, catching up on topics)."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header>
-<h1>Online Language School</h1>
-<p>Language and subject tutoring from the comfort of your home</p>
+<h1>Online tutoring – Language School</h1>
+<p>Online tutoring and language school online – learn from the comfort of your home.</p>
 </header>
 <div class="banner-move-bar banner-desktop">
   <div class="sliding-area">
@@ -266,6 +363,7 @@
 <a href="#pricing">Pricing</a>
 <a href="#booking">Booking</a>
 <a href="#contact">Contact</a>
+<a href="#faq">FAQ</a>
 </nav>
 
 <div class="banner-move-bar-mobile banner-mobile">
@@ -276,7 +374,7 @@
 <div class="container">
 <section class="section" id="about">
 <h2>About Us</h2>
-<p>We are an online language school focused on personalized learning. We offer language and subject tutoring for primary, secondary students, and adults. Flexible schedules and modern methods.</p>
+<p>We are a language school offering online tutoring for primary and secondary students and adults. Personalized approach, flexible scheduling, and preparation for exams and graduation.</p>
 </section>
 <section class="section" id="courses">
 <h2>Course Offerings</h2>
@@ -336,9 +434,29 @@
   </span>
 </p>
 </section>
-</div>
-<footer>
-<p>© 2025 Online Language School. All rights reserved.</p>
+
+<section class="section faq" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-q">What is online tutoring and how does it work?</button>
+    <div class="faq-a">Lessons run over video call (Microsoft Teams). Before the first session we agree on goals and level; then I share materials and assignments.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">Which subjects do you offer online?</button>
+    <div class="faq-a">English, Math, Slovak, Physics, plus exam prep (monitor, entrance exams, graduation).</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">Where do you provide online tutoring?</button>
+    <div class="faq-a">Across Slovakia — lessons are online and scheduled flexibly. You only need internet and a computer/phone.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">Who is the online language school suitable for?</button>
+    <div class="faq-a">Pupils, secondary students, graduates and adults. We adapt the lessons to your goals (exams, interviews, catching up on topics).</div>
+  </div>
+</section>
+
+</div><footer>
+<p>© 2025 Online Language School. All rights reserved.<br>We provide online tutoring across Slovakia — flexible and personalized.</p>
 </footer>
 
 <script>
@@ -360,6 +478,17 @@ function setBannerSlideDistance() {
 }
 window.addEventListener('resize', setBannerSlideDistance);
 window.addEventListener('DOMContentLoaded', setBannerSlideDistance);
+</script>
+<script>
+
+// Collapsible FAQ with smooth animation (CSS-driven)
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  });
+});
+
 </script>
 
 </body>
