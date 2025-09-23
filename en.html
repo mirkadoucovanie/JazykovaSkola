@@ -338,6 +338,25 @@
     <link rel="alternate" href="https://mirkadoucovanie.online/en" hreflang="en">
     <link rel="alternate" href="https://mirkadoucovanie.online/" hreflang="x-default">
     <!-- hreflang end -->
+
+<style>
+/* Equalize legal area spacing: 1 = 2 = 3 */
+footer { --gap: 15px; } /* keep 3 as-is (footer's padding-bottom is 15px by default) */
+footer .container { background: transparent; } /* remove white rectangle */
+footer .legal-wrap { 
+  display:flex; justify-content:center; 
+  margin-top: var(--gap); margin-bottom: var(--gap);
+}
+footer .legal-pill {
+  display:inline-flex; gap:18px; align-items:center; justify-content:center;
+  padding: calc(var(--gap)/3) 18px; /* visual breathing room */
+  background:#ffffff; color:#003d80; border-radius:10px; 
+  line-height:1.2;
+}
+footer .legal-pill a { color:#003d80; text-decoration:none; }
+footer .legal-pill a:hover { text-decoration:underline; }
+</style>
+
 </head>
 <body>
 <header>
@@ -346,7 +365,7 @@
 </header>
 <div class="banner-move-bar banner-desktop">
   <div class="sliding-area">
-    <span class="moving-text">Availability on Thursday and Friday</span>
+    <span class="moving-text">Spots still available in September 2025</span>
   </div>
   <div class="lang-switch-overlay">
     <span>Language:</span>
@@ -462,6 +481,12 @@
 
 </div><footer>
 <p>© 2025 Online Language School. All rights reserved.<br>We provide online tutoring across Slovakia — flexible and personalized.</p>
+
+<div class="container legal-wrap"><div class="legal-pill">
+      <a href="privacy-policy.html">Privacy Policy</a> ·
+      <a href="terms-and-conditions.html">Terms & Conditions</a>
+    </div></div>
+
 </footer>
 
 <script>
