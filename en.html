@@ -366,11 +366,26 @@ footer .legal-pill {
 footer .legal-pill a { color:#003d80; text-decoration:none; }
 footer .legal-pill a:hover { text-decoration:underline; }
 </style>
+<style>
+  .hero-title{
+    font-size: clamp(1.6rem, 4.5vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0.2em 0 0.4em;
+    text-wrap: balance;
+  }
+  .nowrap{ white-space: nowrap; }
+  .mobile-break{ display: none; }
 
+  @media (max-width: 520px){
+    .hero-title{ font-size: clamp(1.4rem, 6vw, 2.2rem); }
+    .mobile-break{ display: inline; }
+  }
+</style>
 </head>
 <body>
 <header>
-<h1>Language school & tailored online tutoring</h1>
+<h1 class="hero-title">Language school <span class="nowrap">& tailored online tutoring</span><span class="mobile-break"><br></span></h1>
 <p>Tutoring and language school – learn from the comfort of your home</p>
 </header>
 <div class="banner-move-bar banner-desktop">
