@@ -3,13 +3,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<meta name="description" content="Online tutoring for primary, secondary and adults. English, Math, Slovak, exam prep incl. Maturita. Flexible scheduling, 1-to-1.">
 <link rel="icon" type="image/png" href="favicon.png">
-<meta content="Professional online tutoring and language school online. English, Math, Slovak, Physics. Personalized approach, flexible schedule, across Slovakia." name="description">
 <meta content="online tutoring, language school online, online English tutoring, online Math tutoring, online Slovak tutoring, online Physics tutoring, tutoring Slovakia, tutoring online" name="keywords"/>
 <meta content="mirkadoucovanie.online" name="author"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Online tutoring – Language school & courses</title>
-<meta content="Professional online tutoring and language school online. English, Math, Slovak, Physics. Personalized approach, flexible schedule, across Slovakia." name="description"/>
 <meta content="online tutoring, language school online, online English tutoring, online Math tutoring, online Slovak tutoring, online Physics tutoring, tutoring Slovakia, tutoring online" name="keywords"/>
 <meta content="Jazyková škola Online" name="author"/>
 <style>
@@ -437,6 +436,13 @@ footer .legal-pill a:hover { text-decoration:underline; }
   </select>
 
   <textarea name="message" placeholder="Your message or preferred time" rows="4"></textarea>
+  <label style="display:flex; gap:8px; align-items:flex-start; font-size:0.95em;">
+    <input type="checkbox" name="gdpr_consent" required>
+    <span>I agree to the processing of my personal data for the purpose of handling my booking and communication, as described in the
+      <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</span>
+  </label>
+  <input type="hidden" name="gdpr_text" value="User consented to personal data processing (GDPR) for booking and communication.">
+  
 
   <button type="submit">Submit Booking</button>
 </form>

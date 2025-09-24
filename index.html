@@ -3,13 +3,12 @@
 <html lang="sk">
 <head>
 <meta charset="utf-8"/>
+<meta name="description" content="Online doučovanie pre ZŠ, SŠ a dospelých. Angličtina, matematika, slovenčina, príprava na monitor, prijímačky a maturitu. Individuálny prístup.">
 <link rel="icon" type="image/png" href="favicon.png">
-<meta content="Profesionálne doučovanie online a jazyková škola online. Angličtina, matematika, slovenčina, fyzika. Individuálny prístup, flexibilný rozvrh, celé Slovensko." name="description">
 <meta content="doucovanie online, jazyková škola online, online doučovanie angličtiny, online doučovanie matematiky, online doučovanie slovenčiny, online doučovanie fyziky, doucovanie Bratislava online, doucovanie Košice online, doucovanie Nitra online, doucovanie Žilina online" name="keywords"/>
 <meta content="mirkadoucovanie.online" name="author"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Doučovanie online – Jazyková škola a kurzy</title>
-<meta content="Profesionálne doučovanie online a jazyková škola online. Angličtina, matematika, slovenčina, fyzika. Individuálny prístup, flexibilný rozvrh, celé Slovensko." name="description"/>
 <meta content="doucovanie online, jazyková škola online, online doučovanie angličtiny, online doučovanie matematiky, online doučovanie slovenčiny, online doučovanie fyziky, doucovanie Bratislava online, doucovanie Košice online, doucovanie Nitra online, doucovanie Žilina online" name="keywords"/>
 <meta content="Jazyková škola Online" name="author"/>
 <style>
@@ -437,6 +436,13 @@ footer .legal-pill a:hover { text-decoration:underline; }
   </select>
 
   <textarea name="message" placeholder="Vaša správa alebo preferovaný čas" rows="4"></textarea>
+  <label style="display:flex; gap:8px; align-items:flex-start; font-size:0.95em;">
+    <input type="checkbox" name="gdpr_consent" required>
+    <span>Súhlasím so spracovaním osobných údajov na účely vybavenia mojej rezervácie a komunikácie podľa
+      <a href="zasady-ochrany-sukromia.html" target="_blank">Zásad ochrany súkromia</a>.</span>
+  </label>
+  <input type="hidden" name="gdpr_text" value="User consented to personal data processing (GDPR) for booking and communication.">
+  
 
   <button type="submit">Odoslať rezerváciu</button>
 </form>
